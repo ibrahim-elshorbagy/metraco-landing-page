@@ -4,12 +4,14 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use Livewire\Attributes\Layout;
+use Livewire\Attributes\Title;
 
 #[Layout('layouts.app')]
+#[Title('METRACO | Rebuilding Through Partnership. Growing Through Vision.')]
 class Home extends Component
 {
     public function render()
     {
-        return view('livewire.home.home')->title('Strategic Consulting - NEXT LEVEL | Italy, Saudi Arabia, UAE');
+        return view('livewire.home.home');
     }
 }

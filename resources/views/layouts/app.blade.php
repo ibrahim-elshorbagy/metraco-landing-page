@@ -6,14 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
 
-  <title>{{ $title ?? config('app.name', 'NEXT LEVEL') }}</title>
+  <title>{{ $title ?? config('app.name', 'METRACO') }}</title>
 
   <!-- SEO Meta Tags -->
   @stack('meta')
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.bunny.net">
-  <link href="https://fonts.bunny.net/css?family=inter:400,500,600,700,800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.bunny.net/css?family=manrope:400,500,600,700,800|space+grotesk:500,700&display=swap"
+    rel="stylesheet" />
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -27,11 +28,13 @@
   @livewireStyles
 
   <style>
-    [x-cloak] { display: none !important; }
+    [x-cloak] {
+      display: none !important;
+    }
   </style>
 </head>
 
-<body class="bg-white text-gray-900 font-sans antialiased">
+<body class="bg-slate-50 text-slate-700 font-sans antialiased">
   <!-- Navbar -->
   @include('layouts.partials.navbar')
 
